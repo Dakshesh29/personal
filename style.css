@@ -13,7 +13,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background-color: d; /* Dark overlay */
+  background-color: #F6F1F1; /* Fixed dark overlay */
   z-index: 1;
 }
 
@@ -87,7 +87,6 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-
 /* Profile Image in Hero */
 .hero-img {
   position: absolute;
@@ -105,7 +104,6 @@
   padding: 60px 20px;
   background-color: #AFD3E2;
   text-align: center;
-  
 }
 
 .about h2 {
@@ -259,7 +257,49 @@
   background-color: #0056b3;
 }
 
-
-.about-me{
+.about-me {
   color: #146C94;
+}
+
+/* ========== MEDIA QUERY FOR RESPONSIVENESS ========== */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .hero-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about-info {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .project {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+
+  .hero-img {
+    width: 100px;
+    height: 100px;
+    bottom: 10px;
+    right: 10px;
+  }
 }

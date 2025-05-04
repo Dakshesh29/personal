@@ -1,0 +1,265 @@
+/* HERO SECTION STYLING */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+  color: #146C94;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: d; /* Dark overlay */
+  z-index: 1;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 90%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #19A7CE;
+}
+
+.hero-socials {
+  margin-bottom: 20px;
+}
+
+.hero-socials a {
+  margin-right: 15px;
+  color: #19A7CE;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.hero-socials a:hover {
+  color: #146C94;
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #AFD3E2;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.hero-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Profile Image in Hero */
+.hero-img {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid navy;
+}
+
+/* ========== ABOUT SECTION ========== */
+.about {
+  padding: 60px 20px;
+  background-color: #AFD3E2;
+  text-align: center;
+  
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+/* ========== PROJECTS SECTION ========== */
+.projects {
+  padding: 60px 20px;
+  background-color: #19A7CE;
+}
+
+.projects h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  background-color: #F6F1F1;
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 24px;
+}
+
+.project a {
+  color: #19A7CE;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* ========== CONTACT SECTION ========== */
+.contact {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-links {
+  margin-bottom: 20px;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* Optional Contact Image */
+.contact-img {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+
+.about-me{
+  color: #146C94;
+}
